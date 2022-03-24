@@ -1,9 +1,9 @@
 {
   "packages": {
-    "harrietrc/gdpr-dump": {
+    "serato/gdpr-dump": {
       "dev-master": {
-        "name": "harrietrc/gdpr-dump",
-        "repository": {"type": "git", "url": "git://github.com/harrietrc/gdpr-dump.git"},
+        "name": "serato/gdpr-dump",
+        "repository": {"type": "git", "url": "git://github.com/serato/gdpr-dump.git"},
         "type": "project",
         "version": "dev-master"
       }

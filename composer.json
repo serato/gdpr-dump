@@ -1,5 +1,5 @@
 {
-    "name": "harrietrc/gdpr-dump",
+    "name": "serato/gdpr-dump",
     "description": "A utility to create anonymized database dumps. Forked from smile/gdpr-dump",
     "type": "library",
     "license": "GPL-3.0-or-later",
