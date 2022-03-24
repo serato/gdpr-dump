@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "serato/gdpr-dump": {
+      "dev-master": {
+        "name": "serato/gdpr-dump",
+        "repository": {"type": "git", "url": "git://github.com/serato/gdpr-dump.git"},
+        "type": "project",
+        "version": "dev-master"
+      }
+    }
+  }
+}
