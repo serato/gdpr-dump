@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "harrietrc/gdpr-dump": {
+      "dev-master": {
+        "name": "harrietrc/gdpr-dump",
+        "repository": {"type": "git", "url": "git://github.com/harrietrc/gdpr-dump.git"},
+        "type": "project",
+        "version": "dev-master"
+      }
+    }
+  }
+}
