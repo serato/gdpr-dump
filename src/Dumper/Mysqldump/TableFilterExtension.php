@@ -222,7 +222,7 @@ class TableFilterExtension implements ExtensionInterface
                 [$this->connection->quoteIdentifier($filter->getColumn()), $value]
             );
 
-            $queryBuilder->andWhere($whereExpr);
+            $queryBuilder->orWhere($whereExpr);
         }
 
         // Apply sort orders

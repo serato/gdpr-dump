@@ -90,8 +90,9 @@ class SqlDumperTest extends TestCase
         $this->assertStringContainsString('store2', $output);
         $this->assertStringNotContainsString('store3', $output);
 
-        // User 1 must not be dumped (does not match the date filter)
-        $this->assertStringNotContainsString('user1@test.org', $output);
+        // User 1 should be dumped, now that filters are now 'ORed' rather than 'ANDed'. The first filter will match the
+        // customer's email address, but the second will not match their `created_at` date.
+        $this->assertStringContainsString('user1@test.org', $output);
 
         // User 2 must be dumped, but not anonymized (skip_conversion_if parameter)
         $this->assertStringContainsString('user2@test.org', $output);
@@ -127,8 +128,6 @@ class SqlDumperTest extends TestCase
         $this->assertStringContainsString('street7', $output);
 
         if ($filterPropagationEnabled) {
-            $this->assertStringNotContainsString('street1', $output);
-            $this->assertStringNotContainsString('street2', $output);
             $this->assertStringNotContainsString('street8', $output);
             $this->assertStringNotContainsString('street9', $output);
         } else {
